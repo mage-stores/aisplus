@@ -1,5 +1,4 @@
 <div class="homepage">
-	
 	<div id="slider">
 		<div class="slidercontrolwr-left">
 			<div class="slidercontrol">
@@ -27,12 +26,9 @@
 	</div>
 	<script src="<?php echo $this->getSkinUrl('js/') ?>glider.js" type="text/javascript"></script>
 	<script type="text/javascript" charset="utf-8">
-		var my_glider = new Glider('slider', {duration:0.5, autoGlide: true, frequency: 4, initialSection: 'section1'});
+		var my_glider = new Glider('slider', {duration:0.5, autoGlide: true, frequency: 10, initialSection: 'section1'});
 	</script>
-	
-	<div class="home-right">
-		<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('pt001-home-topbox')->toHtml() ?>
-	</div>
+
 	<div class="clearer"></div>
 	
 	<div class="home-box1">

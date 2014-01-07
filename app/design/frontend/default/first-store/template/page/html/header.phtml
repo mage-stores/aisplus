@@ -39,8 +39,11 @@
     	    <?php else:?>
     	    <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
     	    <?php endif?>
-    	    
-    	    <div class="header-usps">
+            <?php echo $this->getChildHtml('topSearch') ?>
+            <div class="welcome-msg">
+                <?php echo $this->getWelcome() ?>
+            </div>
+            <!--<div class="header-usps">
     	    	<div class="usp1">
     	    		<div class="headline"><?php echo $headerusp1->getTitle(); ?></div>
     	    		<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('pt001-header-usp1')->toHtml() ?>
@@ -53,26 +56,24 @@
     	    		<div class="headline"><?php echo $headerusp3->getTitle(); ?></div>
     	    		<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('pt001-header-usp3')->toHtml() ?>
     	    	</div>
-    	    </div>
-    	    
+    	    </div>-->
+
     	    <div class="header-right">
     	    	<?php echo $this->getChildHtml('topContainer'); ?>
     	    	<?php echo $this->getChildHtml('store_language') ?>
     	    	<div class="clearer"></div>
-    	    	<div class="welcome-msg">
-    	    		<?php echo $this->getWelcome() ?> <?php echo $this->getAdditionalHtml() ?>
-    	    	</div>
+
 			</div>
     	    <div class="clearer"></div>
+            <div class="quick-access-container">
+                <div class="quick-access">
+                    <?php echo $this->getChildHtml('topLinks') ?>
+                    <div class="clearer"></div>
+                </div>
+            </div>
     	</div>
     </div>
     
     <?php echo $this->getChildHtml('topMenu') ?>
-    <div class="quick-access-container">
-    	<div class="quick-access">
-    		<?php echo $this->getChildHtml('topSearch') ?>
-    	    <?php echo $this->getChildHtml('topLinks') ?>
-    	    <div class="clearer"></div>
-    	</div>
-    </div>
+
 </div>
