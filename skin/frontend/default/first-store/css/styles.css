@@ -245,7 +245,7 @@ ul,ol {
 }
 
 .page {
-	min-width: 1234px;
+	min-width: 1200px;
 	text-align: left;
 	background-color: #fff;
 	margin: 0 auto; 
@@ -950,7 +950,7 @@ p.required {
 
 .breadcrumbs { 
 	margin: 0 auto 12px; 
-	width: 1234px; 
+	width: 1200px;
 	font-size: 13px; 
 }
 
