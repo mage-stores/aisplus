@@ -40,7 +40,7 @@ Customer account pages, rendered for all tabs in dashboard
         </reference>
     </customer_account>-->
 
-    <newsletter_manage_index translate="label">
+    <!--<newsletter_manage_index translate="label">
         <label>Customer My Account Newsletter Subscriptions</label>
         <update handle="customer_account"/>
         <reference name="my.account.wrapper">
@@ -51,6 +51,6 @@ Customer account pages, rendered for all tabs in dashboard
                 </block>
             </block>
         </reference>
-    </newsletter_manage_index>
+    </newsletter_manage_index>-->
 
 </layout>
