@@ -1029,18 +1029,18 @@ p.required {
 
 .pager { 
 	padding: 8px;
-	margin: 5px 0 0;
-	text-align: center; 
-	border: 1px solid #ddd; 
+	margin: 5px 0 10px 0;
+	text-align: center;
 	color: #555;
 }
 
 .pager .amount { 
-	float: left; 
+	float: left;
+    margin-right: 15px;
 }
 
 .pager .limiter { 
-	float: right; 
+	float: left;
 }
 
 .pager .pages { 
@@ -1087,20 +1087,16 @@ p.required {
 
 /* SORTER
 ========================================== */
+.category-products .toolbar .sorter {
+    display: none;
+}
 
 .sorter { 
 	padding: 8px;
-	background: #eee;
-	background-image: -moz-linear-gradient(top,#eeeeee,#ffffff);
-	background-image: -webkit-gradient(linear,left top,left bottom,from(#eeeeee),to(#ffffff));
-	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr=#eeeeee,endColorStr=#ffffff);
-	-ms-filter: "progid:DXImageTransform.Microsoft.Gradient(startColorStr=#eeeeee, endColorStr=#ffffff)"; 
 	margin-right: 0; 
 	margin-left: 0; 
-	margin-bottom: 12px; 
-	border: 1px solid #ddd; 
-	color: #555; 
-	border-top-color: #fff; 
+	margin-bottom: 12px;
+	color: #555;
 }
 
 .sorter .view-mode { 
@@ -1111,7 +1107,7 @@ p.required {
 	color: #222;
 }
 
-.sorter .sort-by { 
+.sort-by {
 	float: right; 
 }
 
@@ -1759,7 +1755,7 @@ a.link-cart{
 #nav { 
 	width: 1200px;
 	margin: 0 auto;
-	font-size: 14px; 
+	font-size: 12px;
 }
 
 /* All Levels
@@ -1815,7 +1811,6 @@ a.link-cart{
 
 #nav li a {
 	float: left;
-	font-weight: bold;
 	color: #fff;
 	border-right: 1px solid #999;
 	padding: 14px 17px;
