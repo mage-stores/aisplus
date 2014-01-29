@@ -5232,3 +5232,10 @@ div.scroller div.content {
 .header .logo img {
     margin-top: -10px;
 }
+#nav .level0 ul {
+    z-index: 1000;
+}
+#nav .nav-column {
+    display: block;
+    float: left;
+}
